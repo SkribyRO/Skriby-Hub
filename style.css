@@ -50,7 +50,7 @@ body {
   color: #000;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 412px) {
   #Container p {
     padding: 2vh 7vh 2vh;
     font-size: 3vh;
