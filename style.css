@@ -58,11 +58,8 @@ body {
     border: 1px solid #fff;
   }
   #Container .img1 {
-    margin-left: 50%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
+    margin-left: 40%;
+
   }
 }
 
