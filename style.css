@@ -59,5 +59,6 @@ body {
   }
   #Container .img1 {
     margin-left: 24vh;
+    width: auto;
   }
 }
