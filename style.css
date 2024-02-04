@@ -37,9 +37,9 @@ body {
 
 #Container img {
   border-radius: 1000px;
-  width: 15vh;
+  width: 20vh;
   margin-bottom: 40px;
-  margin-left: 48.3vh;
+  margin-left: 46.3vh;
 }
 
 #Container p:hover {
@@ -59,7 +59,7 @@ body {
   }
 
   #Container .img1 {
-    margin-left: 22vh;
-    width: 20vh;
+    margin-left: 27vh;
+    width: 10vh;
   }
 }
