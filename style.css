@@ -39,7 +39,7 @@ body {
   border-radius: 1000px;
   width: 15vh;
   margin-bottom: 40px;
-
+  margin-left: 48.3vh;
 }
 
 #Container p:hover {
@@ -59,10 +59,5 @@ body {
   }
   #Container .img1 {
     margin-left: 10vh;
-
   }
 }
-
-html, body {
-    height: 100%; }
-  
