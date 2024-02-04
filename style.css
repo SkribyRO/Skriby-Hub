@@ -24,7 +24,7 @@ body {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  transition: all 0.5s ease;1
+  transition: all 0.5s ease;
 }
 
 #Container p {
@@ -58,7 +58,7 @@ body {
     border: 1px solid #fff;
   }
   #Container .img1 {
-    margin-left: 38%;
+    margin-left: 50%;
   }
 }
 
