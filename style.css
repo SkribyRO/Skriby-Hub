@@ -19,7 +19,7 @@ body {
 
 #Container-Coil p {
     border: 1px solid #fff;
-    margin: 1vh 17vh 5vh;
+    margin: 1vh 40vh 5vh;
     padding: 0.9%;
     cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg'), auto;
     transition: all 0.5s ease;
@@ -31,6 +31,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    #Container {
+        padding-top: 20px;
+    }
     #Container-Coil p {
         margin: 1vh 12vh 3.5vh;
         font-size: 14px;
@@ -40,11 +43,14 @@ body {
         padding: 1.5%;
     }
     #Footer-Coil h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+    #Container {
+        padding-top: 20px;
+    }
     #Container-Coil p {
         margin: 1vh 14vh 4vh;
         font-size: 15px;
@@ -54,11 +60,14 @@ body {
         padding: 1.5%;
     }
     #Footer-Coil h2 {
-        font-size: 15px;
+        font-size: 22px;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
+    #Container {
+        padding-top: 20px;
+    }
     #Container-Coil p {
         margin: 1vh 16vh 5vh;
         font-size: 18px;
@@ -68,6 +77,6 @@ body {
         padding: 1.5%;
     }
     #Footer-Coil h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
 }
