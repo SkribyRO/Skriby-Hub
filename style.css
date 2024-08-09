@@ -31,9 +31,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    #Container {
-        padding-top: 20px;
-    }
     #Container-Coil p {
         margin: 1vh 12vh 3.5vh;
         font-size: 14px;
@@ -42,12 +39,12 @@ body {
     #Container-Coil p:hover {
         padding: 1.5%;
     }
+    h2 {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    #Container {
-        padding-top: 20px;
-    }
     #Container-Coil p {
         margin: 1vh 14vh 4vh;
         font-size: 15px;
@@ -56,12 +53,12 @@ body {
     #Container-Coil p:hover {
         padding: 1.5%;
     }
+    h2 {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
-    #Container {
-        padding-top: 20px;
-    }
     #Container-Coil p {
         margin: 1vh 16vh 5vh;
         font-size: 18px;
@@ -69,5 +66,8 @@ body {
     }
     #Container-Coil p:hover {
         padding: 1.5%;
+    }
+    h2 {
+        font-size: 18px;
     }
 }
