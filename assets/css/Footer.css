@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
-
 #Footer {
     color: aliceblue;
 }
 
 #Footer h2 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     padding: 0px 0px 10px;
-    font-family: "Nunito", sans-serif;
+    font-family: "New Amsterdam", sans-serif;
 }

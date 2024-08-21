@@ -1,82 +1,55 @@
-body {
-    padding: 0;
-    margin: 0%;
-    background-color: #000;
+* {
     cursor: crosshair;
-    font-family: "Nunito", sans-serif;
 }
 
 #Container {
     text-align: center;
-    padding-top: 50px;
 }
 
-#Container-Coil a {
-    color: #fff;
-    font-size: 22px;
+#Container-Logo img {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.5s ease;
+}
+
+#Container-Logo img:hover {
+    transform: scale(1.2);
+}
+
+#Container-Social-Media {
+    display: grid;
+}
+
+#Container-Social-Media a {
     text-decoration: none;
-}
-
-#Container-Coil p {
-    border: 1px solid #fff;
-    margin: 1vh 40vh 5vh;
-    padding: 0.9%;
-    cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg'), auto;
-    transition: all 0.5s ease;
-}
-
-#Container-Coil p:hover {
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 30px;
+    padding: 22px;
     background-color: #fff;
+    margin: 40px 30% 30px;
     color: #000;
 }
 
-@media screen and (max-width: 480px) {
-    #Container {
-        padding-top: 13px;
-    }
-    #Container-Coil p {
-        margin: 1vh 12vh 3.5vh;
-        font-size: 14px;
-        padding: 1.5%;
-    }
-    #Container-Coil p:hover {
-        padding: 1.5%;
-    }
-    #Footer-Coil h2 {
-        font-size: 20px;
-    }
+#Container-Social-Media a:hover {
+    text-decoration: none;
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 30px;
+    padding: 22px;
+    background-color: #ff9f43;
+    margin: 40px 30% 30px;
+    color: #fff;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    #Container {
-        padding-top: 15px;
-    }
-    #Container-Coil p {
-        margin: 1vh 14vh 4vh;
-        font-size: 15px;
-        padding: 1.5%;
-    }
-    #Container-Coil p:hover {
-        padding: 1.5%;
-    }
-    #Footer-Coil h2 {
-        font-size: 22px;
-    }
+#Container-Social-Media img {
+    width: 30px;
+    height: 30px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-    #Container {
-        padding-top: 18px;
-    }
-    #Container-Coil p {
-        margin: 1vh 16vh 5vh;
-        font-size: 18px;
-        padding: 1.5%;
-    }
-    #Container-Coil p:hover {
-        padding: 1.5%;
-    }
-    #Footer-Coil h2 {
-        font-size: 24px;
-    }
+#Container-Text-Steam p {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 30px;
+    color: #fff;
 }
