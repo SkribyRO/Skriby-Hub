@@ -1,3 +1,4 @@
+/* Music container */
 #Music {
     position: fixed;
     bottom: 20px;
@@ -7,6 +8,7 @@
     align-items: flex-end;
 }
 
+/* Play/Pause button styles */
 #playPauseButton {
     padding: 15px 30px;
     font-size: 24px;
@@ -20,13 +22,44 @@
     text-align: center;
 }
 
+/* Hover effect for the button */
 #playPauseButton:hover {
     background: linear-gradient(135deg, #ff8c00 0%, #ff6f61 100%);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-2px);
 }
 
+/* Active state for the button */
 #playPauseButton:active {
     transform: translateY(0);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design for small screens */
+@media only screen and (max-width: 600px) {
+    #Music {
+        bottom: 10px;
+        left: 10px;
+        align-items: center;
+    }
+
+    #playPauseButton {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 40px;
+    }
+}
+
+/* Responsive design for large screens */
+@media only screen and (min-width: 1024px) {
+    #Music {
+        bottom: 30px;
+        left: 30px;
+    }
+
+    #playPauseButton {
+        padding: 20px 40px;
+        font-size: 28px;
+        border-radius: 60px;
+    }
 }
