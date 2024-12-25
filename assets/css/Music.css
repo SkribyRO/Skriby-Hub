@@ -44,22 +44,23 @@
     }
 
     #playPauseButton {
-        padding: 10px 20px;
+        padding: 3px 8px;
         font-size: 20px;
         border-radius: 40px;
     }
 }
 
-/* Responsive design for large screens */
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (max-width: 1024px) {
     #Music {
-        bottom: 30px;
-        left: 30px;
+        bottom: 10px;
+        left: 10px;
+        align-items: center;
     }
 
     #playPauseButton {
-        padding: 20px 40px;
-        font-size: 28px;
-        border-radius: 60px;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 40px;
     }
 }

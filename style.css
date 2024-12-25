@@ -103,25 +103,3 @@
         font-size: 24px;
     }
 }
-
-/* Desktop styles */
-@media only screen and (min-width: 1025px) {
-    #Container-Logo img {
-        width: 120px;
-        height: 120px;
-    }
-
-    #Container-Social-Media a {
-        font-size: 30px;
-        padding: 22px;
-        margin: 40px 30%;
-    }
-
-    #Container-Text-Steam p {
-        font-size: 30px;
-    }
-
-    #playPauseButton {
-        font-size: 30px;
-    }
-}
