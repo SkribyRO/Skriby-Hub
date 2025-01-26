@@ -25,14 +25,9 @@
 
 #Container-Social-Media a {
     text-decoration: none;
-
     font-family: "New Amsterdam", sans-serif;
-
-
     background-color: #fff;
-
     color: #000;
-
     font-size: 30px;
     padding: 22px;
     margin: 40px 30% 30px;
@@ -58,48 +53,6 @@
     transform: scale(1.2);
 }
 
-/* Device Screen */
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    #Container-Logo img {
-        width: 80px;
-        height: 80px;
-    }
-
-    #Container-Social-Media a {
-        font-size: 18px;
-        padding: 12px;
-        margin: 20px 15%;
-    }
-
-    #Container-Text-Steam p {
-        font-size: 20px;
-    }
-
-    #playPauseButton {
-        font-size: 20px;
-    }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    #Container-Logo img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #Container-Social-Media a {
-        font-size: 24px;
-        padding: 16px;
-        margin: 30px 20%;
-    }
-
-    #Container-Text-Steam p {
-        font-size: 25px;
-    }
-
-    #playPauseButton {
-        font-size: 24px;
-    }
+img {
+    margin: 30px 0px 15px;
 }
