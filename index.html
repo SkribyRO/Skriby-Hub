@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-
 <html>
 <head>
+    <!-- Title -->
+    <title>Skriby - Gaming Content and Portfolio</title>
+
     <!-- Basic Meta Tags -->
-    <title> Skriby - Gaming Content and portofolio </title>
     <meta charset="UTF-8">
-    <meta name="author" content="Skriby">
-    <meta name="description" content="Working">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Skriby">
+    <meta name="description" content="Explore SkribyRPG's gaming content and stay connected via YouTube, Instagram, and more.">
+    <meta name="keywords" content="Gaming, Content, Portfolio, YouTube, Twitch, Steam">
+
+    <!-- Open Graph & Twitter Meta Tags -->
+    <meta property="og:title" content="Skriby - Gaming Content and Portfolio">
+    <meta property="og:description" content="Explore SkribyRPG's gaming content and stay connected via YouTube, Instagram, and more.">
+    <meta name="twitter:title" content="Skriby - Gaming Content and Portfolio">
+    <meta name="twitter:description" content="Explore SkribyRPG's gaming content and stay connected via YouTube, Instagram, and more.">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./style.css">
@@ -18,19 +25,16 @@
     <link rel="stylesheet" href="./assets/css/ScrollBar.css">
     <link rel="stylesheet" href="./assets/css/Footer.css">
 
-     <!-- JavaScript -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" id="btw">
+
+    <!-- JavaScript -->
     <script src="./assets/css/js/Run.js"></script>
     <script src="./assets/css/js/Loading.js"></script>
     <script src="./assets/css/js/Get IP.js"></script>
     <script src="./assets/css/js/schema.js"></script>
-
-
-       <meta property="og:title" content="Skriby - Gaming Content and Portfolio">
-       <meta property="og:description" content="Explore SkribyRPG's gaming content and stay connected via YouTube, Instagram, and more.">
-       <meta property="og:url" content="https://skriby.xyz">
-       
-       <meta name="twitter:title" content="Skriby - Gaming Content and Portfolio">
-       <meta name="twitter:description" content="Explore SkribyRPG's gaming content and stay connected via YouTube, Instagram, and more.">    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -51,11 +55,12 @@
                 <a href="https://terms.skriby.xyz/"><nav> Terms </nav></a>
             </div>
     </header>   
+    
     <!-- Main container -->
-    <div id="Container">
+    <main id="Container">
         <div id="Container-Logo">
             <img src="./assets/music/images/Logo.jpg">
-        <div id="Container-Social-Media">
+        <main id="Container-Social-Media">
             <a href="https://www.youtube.com/channel/UCT2NcObSPWEJ9_paRBVlkqA"> Youtube </a>
             <a href="https://www.instagram.com/skribyrpg/"> Instagram </a>
             <a href="https://www.twitch.tv/skribyrpg"> Twitch </a>
@@ -63,34 +68,33 @@
             <a href="https://truckersmp.com/user/4349225"> Truckers MP </a>
             <a href="https://discord.com/users/406785528688672779"> Discord </a>
             <a href="https://vtc.skriby.xyz"> Portofolio </a>
-            </div>
-            <div id="Container-Text-Steam">
-                <p> Steam </p>
-            <div id="Container-Social-Media">
-                <a href="https://steamcommunity.com/id/Skriby/"> Steam 1 </a>
-                <a href="https://steamcommunity.com/profiles/76561199385818640/"> Steam 2 </a>
-                <a href="https://steamcommunity.com/profiles/76561199040045793/"> Steam 3 </a>
-                <a href="https://steamcommunity.com/profiles/76561199354595570/"> Steam 4 </a>
-                </div>
-            </div>
-        </div>
+        </main>
+        <main id="Container-Text-Steam">
+            <p> Steam </p>
+        <main id="Container-Social-Media">
+            <a href="https://steamcommunity.com/id/Skriby/"> Steam 1 </a>
+            <a href="https://steamcommunity.com/profiles/76561199385818640/"> Steam 2 </a>
+            <a href="https://steamcommunity.com/profiles/76561199040045793/"> Steam 3 </a>
+            <a href="https://steamcommunity.com/profiles/76561199354595570/"> Steam 4 </a>
+            </main>
+        </main>
     </div>
-
+</main>
     <!-- Play/Stop Button -->
     <div id="Music">
         <button id="playPauseButton" style="justify-content: right;"> 🔈 </button>
         <audio id="audioPlayer" src="./assets/music/Music.mp3" loop></audio>
         <script src="./assets/css/js/Music.js"></script>
     </div>
+    
     <!-- Footer section -->
     <footer>
-        <div id="Footer">
+        <main id="Footer">
             <div id="Footer-Coil">
                 <h2> Copyright by Skriby</h2>
                 <h2>All rights copyrighted <script>document.write(new Date().getFullYear());</script> ©</h2>
             </div>
-        </div>
+        </main>
     </footer>
-    <!--------------------->
-    </body>
+</body>
 </html>
